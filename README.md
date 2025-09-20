@@ -1,6 +1,3 @@
-Perfect 👍 If your **PDF Query System** has 3 main files (`app.py`, `.env`, `requirements.txt`), here’s how your **README.md** should look:
-
-```markdown
 # PDF Query System  
 
 ## 📌 Overview  
@@ -25,15 +22,12 @@ It extracts text, processes queries using NLP/LLMs, and provides accurate answer
 ---
 
 ## 📂 Project Files  
-```
+DF-Query-System/
+│── app.py # Main application file
+│── .env # Environment variables (API keys, config)
+│── requirements.txt # Python dependencies
+│── README.md # Documentation
 
-PDF-Query-System/
-│── app.py             # Main application file
-│── .env               # Environment variables (API keys, config)
-│── requirements.txt   # Python dependencies
-│── README.md          # Documentation
-
-````
 
 ---
 
@@ -43,60 +37,22 @@ PDF-Query-System/
    ```bash
    git clone https://github.com/your-username/pdf-query-system.git
    cd pdf-query-system
-````
+Create a virtual environment (recommended):
 
-2. Create a virtual environment (recommended):
+python -m venv venv
+source venv/bin/activate   # For Linux/Mac  
+venv\Scripts\activate      # For Windows  
+Install dependencies:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # For Linux/Mac  
-   venv\Scripts\activate      # For Windows  
-   ```
+pip install -r rr.txt
 
-3. Install dependencies:
+Add your API keys in .env:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+OPENAI_API_KEY=your_api_key_here
 
-4. Add your API keys in `.env`:
+run the Application
 
-   ```
-   OPENAI_API_KEY=your_api_key_here
-   GEMINI_API_KEY=your_api_key_here
-   ```
+For Streamlit UI:
 
----
-
-## ▶️ Run the Application
-
-For **Streamlit UI**:
-
-```bash
 streamlit run app.py
-```
-
-For **Tkinter UI**:
-
-```bash
-python app.py
-```
-
----
-
-## 📌 Example Queries
-
-* "Summarize this PDF"
-* "What are the key points in section 3?"
-* "List the legal cases mentioned"
-
----
-
-## 👨‍💻 Author
-
-Developed by **Sai Kumar**
-
-```
-
-👉 Do you want me to also **generate a sample `.env` file** and **requirements.txt** for your project so you can run it immediately?
-```
+GEMINI_API_KEY=your_api_key_here
