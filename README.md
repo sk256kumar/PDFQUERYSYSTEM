@@ -22,7 +22,7 @@ It extracts text, processes queries using NLP/LLMs, and provides accurate answer
 ---
 
 ## 📂 Project Files  
-DF-Query-System/
+PDF-Query-System/
 │── app.py # Main application file
 │── .env # Environment variables (API keys, config)
 │── requirements.txt # Python dependencies
